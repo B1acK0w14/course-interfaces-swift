@@ -12,9 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    weak var appCoordinator: AppCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        //ANNOTATION: - Give some second of the launch screen view
+        RunLoop.current.run(until: Date(timeIntervalSinceNow: 1.0))
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+        
+        appCoordinator = AppCoordinator(window: window)
+        appCoordinator?.start()
+        
         return true
     }
 

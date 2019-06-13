@@ -1,0 +1,33 @@
+{
+  "name": "EventBus",
+  "version": "0.0.1",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "summary": "cookiecutter bootstrap template for swift framework",
+  "homepage": "ghttps://medium.com/@tpLioy",
+  "social_media_url": "https://twitter.com/tplioy",
+  "authors": {
+    "Thiago lioy": "thiagolioy@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/thiagolioy/EventBus.git",
+    "tag": "v0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0",
+    "osx": "10.10",
+    "tvos": "9.0",
+    "watchos": "2.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Sources/**/*.swift",
+      "frameworks": "Foundation"
+    }
+  ]
+}

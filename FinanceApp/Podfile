@@ -1,4 +1,7 @@
+platform :ios, '9.0'
+
 target 'FinanceApp' do
     use_frameworks!
     pod 'SnapKit'
+    pod 'EventBus', :git => 'https://github.com/thiagolioy/EventBus'
 end

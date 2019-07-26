@@ -3,14 +3,17 @@ PODS:
     - EventBus/Core (= 0.0.1)
   - EventBus/Core (0.0.1)
   - SnapKit (5.0.0)
+  - SwiftGen (6.1.0)
 
 DEPENDENCIES:
   - EventBus (from `https://github.com/thiagolioy/EventBus`)
   - SnapKit
+  - SwiftGen
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SnapKit
+    - SwiftGen
 
 EXTERNAL SOURCES:
   EventBus:
@@ -24,7 +27,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   EventBus: 4fc1cbc8d343e54b8f85677342cbe0a27234ce98
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
 
-PODFILE CHECKSUM: 5e5a3a401efa0fb36b8562fff910ef4b7f8eacea
+PODFILE CHECKSUM: b8f7e1b6bcdc19d81b138d28099daacdc7c29b42
 
 COCOAPODS: 1.7.1

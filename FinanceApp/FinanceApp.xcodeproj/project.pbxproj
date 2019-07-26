@@ -8,24 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		2AACFEC5607CFEC9900BDE93 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DD72C49D1D6D64E3F98DA8 /* Pods_FinanceApp.framework */; };
+		E51902CB22B21A86005A8459 /* Example1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51902CA22B21A86005A8459 /* Example1.swift */; };
+		E5328C0122EB878600CA104E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5328C0022EB878600CA104E /* Language.swift */; };
 		E551D8D022AA1B3100C25E16 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E551D8CF22AA1B3100C25E16 /* ViewConfiguration.swift */; };
+		E58DE26322EB687C0020CD46 /* Language.strings in Resources */ = {isa = PBXBuildFile; fileRef = E58DE26222EB687C0020CD46 /* Language.strings */; };
+		E58DE26522EB68990020CD46 /* GenerateResource.sh in Resources */ = {isa = PBXBuildFile; fileRef = E58DE26422EB68990020CD46 /* GenerateResource.sh */; };
 		E5C40C9C22A8DBF800F0C621 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C40C9B22A8DBF800F0C621 /* AppDelegate.swift */; };
 		E5FBEB6E22B0CA13006F3EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5FBEB6D22B0CA13006F3EF6 /* LaunchScreen.storyboard */; };
 		E5FBEB7022B1FDD8006F3EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5FBEB6F22B1FDD7006F3EF6 /* Assets.xcassets */; };
 		E5FBEB7422B2060E006F3EF6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBEB7322B2060E006F3EF6 /* AppCoordinator.swift */; };
+		E5FBEB7822B20E2D006F3EF6 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FBEB7722B20E2D006F3EF6 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B3106AF97426CEAFA32C4F0 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
 		915C4589EB11491AE872A0A8 /* Pods-FinanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.debug.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		94DD72C49D1D6D64E3F98DA8 /* Pods_FinanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E51902CA22B21A86005A8459 /* Example1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1.swift; sourceTree = "<group>"; };
+		E5328C0022EB878600CA104E /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E551D8CF22AA1B3100C25E16 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		E58DE26222EB687C0020CD46 /* Language.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Language.strings; sourceTree = "<group>"; };
+		E58DE26422EB68990020CD46 /* GenerateResource.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateResource.sh; sourceTree = "<group>"; };
 		E5C40C9822A8DBF800F0C621 /* FinanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C40C9B22A8DBF800F0C621 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5C40CA722A8DBF900F0C621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5FBEB6D22B0CA13006F3EF6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5FBEB6F22B1FDD7006F3EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5FBEB7322B2060E006F3EF6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		E5FBEB7722B20E2D006F3EF6 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,20 +67,37 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E51902C822B21A67005A8459 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E51902C922B21A6B005A8459 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E51902CA22B21A86005A8459 /* Example1.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		E551D8C422A8DDF500C25E16 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E58DE26422EB68990020CD46 /* GenerateResource.sh */,
 				E5FBEB6F22B1FDD7006F3EF6 /* Assets.xcassets */,
+				E58DE26122EB681E0020CD46 /* Localization */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		E551D8C522A8DE4900C25E16 /* OnBoarding */ = {
+		E551D8C522A8DE4900C25E16 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
 				E5FBEB6D22B0CA13006F3EF6 /* LaunchScreen.storyboard */,
 			);
-			path = OnBoarding;
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		E551D8C622A8DEDB00C25E16 /* Source */ = {
@@ -94,7 +121,8 @@
 		E551D8C822A8DF1000C25E16 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				E551D8C522A8DE4900C25E16 /* OnBoarding */,
+				E551D8C522A8DE4900C25E16 /* LaunchScreen */,
+				E5FBEB7522B20DF2006F3EF6 /* Home */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -113,6 +141,15 @@
 				E551D8CF22AA1B3100C25E16 /* ViewConfiguration.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E58DE26122EB681E0020CD46 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				E58DE26222EB687C0020CD46 /* Language.strings */,
+				E5328C0022EB878600CA104E /* Language.swift */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		E5C40C8F22A8DBF800F0C621 = {
@@ -144,6 +181,24 @@
 			path = FinanceApp;
 			sourceTree = "<group>";
 		};
+		E5FBEB7522B20DF2006F3EF6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E51902C922B21A6B005A8459 /* ViewControllers */,
+				E51902C822B21A67005A8459 /* Views */,
+				E5FBEB7622B20E13006F3EF6 /* MainTabBar */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E5FBEB7622B20E13006F3EF6 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E5FBEB7722B20E2D006F3EF6 /* MainTabBarController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +211,7 @@
 				E5C40C9522A8DBF800F0C621 /* Frameworks */,
 				E5C40C9622A8DBF800F0C621 /* Resources */,
 				543C20E9C44B9DA06C8E77A5 /* [CP] Embed Pods Frameworks */,
+				E5885D2B22EB69AD007B4E8A /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -204,8 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58DE26322EB687C0020CD46 /* Language.strings in Resources */,
 				E5FBEB7022B1FDD8006F3EF6 /* Assets.xcassets in Resources */,
 				E5FBEB6E22B0CA13006F3EF6 /* LaunchScreen.storyboard in Resources */,
+				E58DE26522EB68990020CD46 /* GenerateResource.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +309,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceApp/Pods-FinanceApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E5885D2B22EB69AD007B4E8A /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nsh \"$SRCROOT/FinanceApp/Resources/GenerateResource.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,7 +335,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5FBEB7422B2060E006F3EF6 /* AppCoordinator.swift in Sources */,
+				E5FBEB7822B20E2D006F3EF6 /* MainTabBarController.swift in Sources */,
 				E551D8D022AA1B3100C25E16 /* ViewConfiguration.swift in Sources */,
+				E5328C0122EB878600CA104E /* Language.swift in Sources */,
+				E51902CB22B21A86005A8459 /* Example1.swift in Sources */,
 				E5C40C9C22A8DBF800F0C621 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -4,4 +4,5 @@ target 'FinanceApp' do
     use_frameworks!
     pod 'SnapKit'
     pod 'EventBus', :git => 'https://github.com/thiagolioy/EventBus'
+    pod 'SwiftGen'
 end

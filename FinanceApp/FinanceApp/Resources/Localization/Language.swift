@@ -12,6 +12,8 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
   /// Transactions
+  internal static let tabbarTitleTransactions = L10n.tr("Language", "tabbar_title_transactions")
+  /// Transactions
   internal static let titleNavigationController = L10n.tr("Language", "title_navigation_controller")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

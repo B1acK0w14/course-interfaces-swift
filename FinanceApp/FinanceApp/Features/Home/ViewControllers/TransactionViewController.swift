@@ -1,5 +1,5 @@
 //
-//  Example1.swift
+//  TransactionViewController.swift
 //  FinanceApp
 //
 //  Created by David Penagos on 6/13/19.
@@ -9,9 +9,10 @@
 import Foundation
 import UIKit
 
-class Example1: UIViewController {
+class TransactionViewController: UIViewController {
     
     //MARK: - Properties
+    private let transactionView = TransactionView()
     
     //MARK: - Init
     init() {
@@ -23,6 +24,16 @@ class Example1: UIViewController {
     }
     
     //MARK: - Life Cycle
+    override func loadView() {
+        super.loadView()
+        view = transactionView
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.transactionView.setup()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupNavigationController()

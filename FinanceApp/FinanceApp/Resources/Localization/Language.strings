@@ -1,3 +1,6 @@
 
 //Title Navigation Controller
 "title_navigation_controller" = "Transactions";
+
+//TabBar Title Elements
+"tabbar_title_transactions" = "Transactions";

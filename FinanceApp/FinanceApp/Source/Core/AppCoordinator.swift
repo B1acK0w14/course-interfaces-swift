@@ -36,12 +36,20 @@ class AppCoordinator: Listener<RouterEvents> {
         EventBus.shared.add(listener: self)
     }
     
-    private func callLogin() {
-        let nav = UINavigationController()
-        self.rootViewController = nav
+    private func callHome() {
+        let mainTabBarController = MainTabBarController(tabBarElements: setTabBarElements())
+        self.rootViewController = mainTabBarController
         self.window.rootViewController = self.rootViewController
-        let mainTabBarController = MainTabBarController()
-        nav.pushViewController(mainTabBarController, animated: true)
+        let tabBarCoordinator = TabBarCoordinator(rootViewController: mainTabBarController)
+        tabBarCoordinator.start()
+    }
+    
+    private func setTabBarElements() -> [TabBarModel] {
+        //ANNOTATION: - Add TabBarElements with icon, title and target for each one.
+        var arrayTabBarModel: [TabBarModel] = []
+        let homeTabBarModel = TabBarModel(icon: nil, iconSelected: nil, title: L10n.tabbarTitleTransactions, target: .transactions)
+        arrayTabBarModel.append(homeTabBarModel)
+        return arrayTabBarModel
     }
 }
 
@@ -49,7 +57,7 @@ class AppCoordinator: Listener<RouterEvents> {
 extension AppCoordinator: Coordinator {
     func start(completion: @escaping () -> Void = {}) {
         
-        callLogin()
+        callHome()
         self.window.makeKeyAndVisible()
         completion()
     }

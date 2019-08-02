@@ -15,7 +15,7 @@ protocol Coordinator {
 }
 
 enum RouterEvents: Event {
-    
+    case goToHome
 }
 
 class AppCoordinator: Listener<RouterEvents> {
@@ -23,6 +23,8 @@ class AppCoordinator: Listener<RouterEvents> {
     //MARK: - Properties
     private let window: UIWindow
     weak var rootViewController: UIViewController?
+    
+    private var loginCoordinator: LoginCoordinator?
     
     //MARK: - Init
     init(window: UIWindow) {
@@ -36,7 +38,22 @@ class AppCoordinator: Listener<RouterEvents> {
         EventBus.shared.add(listener: self)
     }
     
-    private func callHome() {
+    override func handle(event: RouterEvents) {
+        switch event {
+        case .goToHome:
+            goToHome()
+        }
+    }
+    
+    private func callLogin() {
+        let nav = UINavigationController()
+        self.rootViewController = nav
+        self.window.rootViewController = self.rootViewController
+        loginCoordinator = LoginCoordinator(rootViewController: nav)
+        loginCoordinator?.start()
+    }
+    
+    private func goToHome() {
         let mainTabBarController = MainTabBarController(tabBarElements: setTabBarElements())
         self.rootViewController = mainTabBarController
         self.window.rootViewController = self.rootViewController
@@ -57,7 +74,7 @@ class AppCoordinator: Listener<RouterEvents> {
 extension AppCoordinator: Coordinator {
     func start(completion: @escaping () -> Void = {}) {
         
-        callHome()
+        callLogin()
         self.window.makeKeyAndVisible()
         completion()
     }

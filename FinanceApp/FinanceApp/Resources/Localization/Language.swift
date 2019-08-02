@@ -15,6 +15,17 @@ internal enum L10n {
   internal static let tabbarTitleTransactions = L10n.tr("Language", "tabbar_title_transactions")
   /// Transactions
   internal static let titleNavigationController = L10n.tr("Language", "title_navigation_controller")
+
+  internal enum Login {
+    /// Forgot Password?
+    internal static let forgotPsw = L10n.tr("Language", "login.forgot_psw")
+    /// Login
+    internal static let loginButton = L10n.tr("Language", "login.login_button")
+    /// Password
+    internal static let psw = L10n.tr("Language", "login.psw")
+    /// E-mail
+    internal static let userName = L10n.tr("Language", "login.user_name")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

@@ -4,3 +4,9 @@
 
 //TabBar Title Elements
 "tabbar_title_transactions" = "Transactions";
+
+//Login
+"login.user_name" = "E-mail";
+"login.psw" = "Password";
+"login.forgot_psw" = "Forgot Password?";
+"login.login_button" = "Login";

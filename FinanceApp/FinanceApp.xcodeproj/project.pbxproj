@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2AACFEC5607CFEC9900BDE93 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DD72C49D1D6D64E3F98DA8 /* Pods_FinanceApp.framework */; };
+		E50008DD22F1F0DB0051CE20 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50008DC22F1F0DB0051CE20 /* UIColor.swift */; };
+		E50008DF22F23BB20051CE20 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50008DE22F23BB20051CE20 /* UITextField.swift */; };
 		E51902CB22B21A86005A8459 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51902CA22B21A86005A8459 /* TransactionViewController.swift */; };
 		E5328C0122EB878600CA104E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5328C0022EB878600CA104E /* Language.swift */; };
 		E5328C0322EB9CDA00CA104E /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5328C0222EB9CDA00CA104E /* TransactionView.swift */; };
 		E5328C0522EF45D500CA104E /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5328C0422EF45D500CA104E /* HomeCoordinator.swift */; };
 		E5328C0722EF485500CA104E /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5328C0622EF485500CA104E /* TabBarCoordinator.swift */; };
 		E5328C0F22EF8E0B00CA104E /* TargetTabBarEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5328C0E22EF8E0B00CA104E /* TargetTabBarEnum.swift */; };
+		E5328C1722F0D8DE00CA104E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5328C1622F0D8DE00CA104E /* LoginViewController.swift */; };
+		E5328C1922F0D8EB00CA104E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5328C1822F0D8EB00CA104E /* LoginView.swift */; };
+		E5328C1B22F0DE0B00CA104E /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5328C1A22F0DE0B00CA104E /* LoginCoordinator.swift */; };
+		E543176E22F33BD800C5B597 /* LoginViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E543176D22F33BD800C5B597 /* LoginViewDelegate.swift */; };
 		E551D8D022AA1B3100C25E16 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E551D8CF22AA1B3100C25E16 /* ViewConfiguration.swift */; };
 		E58DE26322EB687C0020CD46 /* Language.strings in Resources */ = {isa = PBXBuildFile; fileRef = E58DE26222EB687C0020CD46 /* Language.strings */; };
 		E58DE26522EB68990020CD46 /* GenerateResource.sh in Resources */ = {isa = PBXBuildFile; fileRef = E58DE26422EB68990020CD46 /* GenerateResource.sh */; };
@@ -28,12 +34,18 @@
 		0B3106AF97426CEAFA32C4F0 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
 		915C4589EB11491AE872A0A8 /* Pods-FinanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.debug.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		94DD72C49D1D6D64E3F98DA8 /* Pods_FinanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50008DC22F1F0DB0051CE20 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E50008DE22F23BB20051CE20 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		E51902CA22B21A86005A8459 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		E5328C0022EB878600CA104E /* Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		E5328C0222EB9CDA00CA104E /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
 		E5328C0422EF45D500CA104E /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		E5328C0622EF485500CA104E /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		E5328C0E22EF8E0B00CA104E /* TargetTabBarEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetTabBarEnum.swift; sourceTree = "<group>"; };
+		E5328C1622F0D8DE00CA104E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E5328C1822F0D8EB00CA104E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E5328C1A22F0DE0B00CA104E /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
+		E543176D22F33BD800C5B597 /* LoginViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewDelegate.swift; sourceTree = "<group>"; };
 		E551D8CF22AA1B3100C25E16 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		E58DE26222EB687C0020CD46 /* Language.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Language.strings; sourceTree = "<group>"; };
 		E58DE26422EB68990020CD46 /* GenerateResource.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateResource.sh; sourceTree = "<group>"; };
@@ -110,8 +122,45 @@
 		E5328C1022EF9AE200CA104E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E50008DC22F1F0DB0051CE20 /* UIColor.swift */,
+				E50008DE22F23BB20051CE20 /* UITextField.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E5328C1322F0D77200CA104E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E5328C1A22F0DE0B00CA104E /* LoginCoordinator.swift */,
+				E5328C1522F0D8CD00CA104E /* ViewControllers */,
+				E5328C1422F0D8C500CA104E /* Views */,
+				E543176C22F33BBA00C5B597 /* Delegates */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E5328C1422F0D8C500CA104E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E5328C1822F0D8EB00CA104E /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E5328C1522F0D8CD00CA104E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5328C1622F0D8DE00CA104E /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E543176C22F33BBA00C5B597 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				E543176D22F33BD800C5B597 /* LoginViewDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		E551D8C422A8DDF500C25E16 /* Resources */ = {
@@ -154,6 +203,7 @@
 		E551D8C822A8DF1000C25E16 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				E5328C1322F0D77200CA104E /* Login */,
 				E5FBEB7622B20E13006F3EF6 /* MainTabBar */,
 				E551D8C522A8DE4900C25E16 /* LaunchScreen */,
 				E5FBEB7522B20DF2006F3EF6 /* Home */,
@@ -371,15 +421,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5FBEB7422B2060E006F3EF6 /* AppCoordinator.swift in Sources */,
+				E50008DD22F1F0DB0051CE20 /* UIColor.swift in Sources */,
+				E543176E22F33BD800C5B597 /* LoginViewDelegate.swift in Sources */,
 				E5FBEB7822B20E2D006F3EF6 /* MainTabBarController.swift in Sources */,
 				E5328C0F22EF8E0B00CA104E /* TargetTabBarEnum.swift in Sources */,
 				E551D8D022AA1B3100C25E16 /* ViewConfiguration.swift in Sources */,
+				E5328C1B22F0DE0B00CA104E /* LoginCoordinator.swift in Sources */,
 				E5328C0122EB878600CA104E /* Language.swift in Sources */,
 				E51902CB22B21A86005A8459 /* TransactionViewController.swift in Sources */,
+				E5328C1922F0D8EB00CA104E /* LoginView.swift in Sources */,
 				E5328C0722EF485500CA104E /* TabBarCoordinator.swift in Sources */,
 				E5328C0522EF45D500CA104E /* HomeCoordinator.swift in Sources */,
+				E50008DF22F23BB20051CE20 /* UITextField.swift in Sources */,
 				E5328C0322EB9CDA00CA104E /* TransactionView.swift in Sources */,
 				E5C40C9C22A8DBF800F0C621 /* AppDelegate.swift in Sources */,
+				E5328C1722F0D8DE00CA104E /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
